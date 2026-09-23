@@ -265,7 +265,7 @@ function agregarPedido(listaPedidos, listaProductos, nombrePedido, idProducto) {
     console.log(`\n>>>>>>>> Se ha añadido exitosamente ${listaProductos[idProducto].nombre} <<<<<<<<\n`)
 }
 function eliminarAlPedido(listaPedidos, nombrePedido, idProducto){
-    console.log(`\n>>>>>>>> Se ha eliminado exitosamente ${listaPedidos.get(nombrePedido).listaProductos[idProducto].nombre} <<<<<<<<\n`)
+    console.log(`\n>>>>>>>> Se ha eliminado exitosamente ${listaPedidos.get(nombrePedido).listaProductos[idProducto].nombre} <<<<<<<<\n`);
     const pedido = listaPedidos.get(nombrePedido);
     pedido.listaProductos.splice(idProducto,1);
     pedido.totalAcumulado=pedido.listaProductos.reduce((subtotal,producto)=>{

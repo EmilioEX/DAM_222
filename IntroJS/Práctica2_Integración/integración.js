@@ -9,6 +9,11 @@ const productos=[{producto: "Espresso", precio: 60},
 //const productos2 = ["Espresso", "americano", "cappuccino", "latte", "mocha" ];
 //Lista para guardar los pedidos
 const listaPedidos={};
+
+const promos= new Map();
+promos.set(1,{nombre: "2x1", producto: productos[0] });
+
+
 //Bloque para poder solicitar info en consola
 const readline = require("readline");
 
@@ -185,7 +190,7 @@ function pregunta(texto) {
         input: process.stdin,
         output: process.stdout
     });
-
+    
     return new Promise(resolve => {
         rl.question(texto, respuesta => {
             rl.close();
