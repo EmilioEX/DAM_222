@@ -22,18 +22,32 @@ export default function App() {
 // 3.- Zona de estilos y posicionamiento
 const styles = StyleSheet.create({
   container: {
+    flexDirection:'row',
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'space-evenly',
   },
   tarjeta1:{
+    flex:1,
     backgroundColor:'orange',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+    justifyContent: 'space-evenly',
   },
   tarjeta2:{
+    flex:1,
     backgroundColor:'yellow',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
   },
   tarjeta3:{
+    flex:1,
     backgroundColor:'green',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-around',
   },
+
 });
