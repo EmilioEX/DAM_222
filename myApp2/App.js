@@ -1,19 +1,13 @@
 //1.- Zona de importaciones
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image} from 'react-native';
-import {Saludo} from './components/Saludo';
-import {Saludo2} from './components/Saludo2';
-import {Perfil} from './components/Perfil';
+import MenuScreen from './screens/MenuScreen.js';
 
 //2.- Zona Principal (main)
 export default function App() {
   return (
     <View style={styles.container}>
-
-      <Perfil style={styles.tarjeta1} nombre="Genaro" carrera="ITIID" materia="Movil" cuatri="4"/>
-      <Perfil style={styles.tarjeta2} nombre="Emilio" carrera="ITIID" materia="Movil" cuatri="4"/>
-      <Perfil style={styles.tarjeta3} nombre="Jenny" carrera="ITIID" materia="Movil" cuatri="4"/>
-
+      <MenuScreen/>
       <StatusBar style="auto" />
     </View>
   );
@@ -22,32 +16,9 @@ export default function App() {
 // 3.- Zona de estilos y posicionamiento
 const styles = StyleSheet.create({
   container: {
-    flexDirection:'row',
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'flex-start',
-    justifyContent: 'space-evenly',
-  },
-  tarjeta1:{
-    flex:1,
-    backgroundColor:'orange',
-    flexDirection: 'column',
-    alignItems: 'flex-end',
-    justifyContent: 'space-evenly',
-  },
-  tarjeta2:{
-    flex:1,
-    backgroundColor:'yellow',
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
-  },
-  tarjeta3:{
-    flex:1,
-    backgroundColor:'green',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
-
+    backgroundColor:'#fff',
+    alignItems:'center',
+    justifyContent:'center',
+  }
 });

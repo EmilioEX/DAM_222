@@ -1,0 +1,51 @@
+//1.- Zona de importaciones
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Image} from 'react-native';
+import {Perfil} from '../components/Perfil';
+
+//2.- Zona Principal (main)
+export default function Tarjetas() {
+  return (
+    <View style={styles.container}>
+
+      <Perfil style={styles.tarjeta1} nombre="Genaro" carrera="ITIID" materia="Movil" cuatri="4"/>
+      <Perfil style={styles.tarjeta2} nombre="Emilio" carrera="ITIID" materia="Movil" cuatri="4"/>
+      <Perfil style={styles.tarjeta3} nombre="Jenny" carrera="ITIID" materia="Movil" cuatri="4"/>
+
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+// 3.- Zona de estilos y posicionamiento
+const styles = StyleSheet.create({
+  container: {
+    flexDirection:'row',
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'flex-start',
+    justifyContent: 'space-evenly',
+  },
+  tarjeta1:{
+    flex:1,
+    backgroundColor:'orange',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+    justifyContent: 'space-evenly',
+  },
+  tarjeta2:{
+    flex:1,
+    backgroundColor:'yellow',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+  },
+  tarjeta3:{
+    flex:1,
+    backgroundColor:'green',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+  },
+
+});
