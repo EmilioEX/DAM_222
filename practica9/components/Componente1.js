@@ -1,10 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
+
 //Importamos nuestro componente "Pressable"
 import { StyleSheet, Text, View, Pressable } from 'react-native';
 import { useState } from 'react';
 
 
-export const Ejemplo1=()=>{
+export const Componente1=()=>{
   const [mantener, setMantener] = useState(false);
   return (
     <View style={styles.container}>
@@ -24,7 +24,7 @@ export const Ejemplo1=()=>{
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: 'transparent',
     alignItems: 'center',
     justifyContent: 'center',
     margin:20,

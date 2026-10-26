@@ -1,24 +1,22 @@
+//Importamos Librerías que solo ocupa el componente
 import { View, Text, Switch, StyleSheet } from 'react-native';
-
-export default function SwitchMio({ oscuro, cambiarModo }) {
+//Bloque principal del componente
+                        //props para manejar estado del switch
+export const SwitchMio=({ oscuro, cambiarModo })=> {
   return (
     <View style={styles.container}>
-
       <Text style={[styles.titulo,{color: oscuro ? 'white' : 'black'}]}>
         Modo oscuro
       </Text>
-
-    <View style={styles.switchContainer}>
-      <Switch
-        value={oscuro}
-        onValueChange={cambiarModo}
-      />
-    </View>
-
+      <View style={styles.switchContainer}>
+        <Switch
+          value={oscuro}
+          onValueChange={cambiarModo}
+        />
+      </View>
       <Text style={[styles.estado,{color: oscuro ? '#fff7f7' : '#555555'}]}>
         {oscuro ? 'Está activado' : 'Está desactivado'}
       </Text>
-
     </View>
   );
 }

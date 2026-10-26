@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View, Pressable } from 'react-native';
 
-export const Ejemplo3=()=> {
+export const Componente2=()=> {
   return (
     <View style={styles.container}>
       <Pressable
