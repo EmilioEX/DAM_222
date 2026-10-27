@@ -8,6 +8,7 @@ import SafeScreen from './SafeScreen';
 //2.- Zona Principal (main)
 export default function MenuScreen() {
     const[screen,setScreen]=useState('menu');
+    const colores='purple';
     switch(screen){
         case 'tarjetas':
             return <Tarjetas/>
@@ -30,7 +31,7 @@ export default function MenuScreen() {
             return (
                 <View style={styles.container}>
                     <Text> Menú de Prácticas</Text>
-                    <Button title='Tarjetas' onPress={ ()=>setScreen('tarjetas')}></Button>
+                    <Button color={colores} title='Tarjetas' onPress={ ()=>setScreen('tarjetas')}></Button>
                     <Button title='SafeAreaView' onPress={ ()=>setScreen('safeScreen')}></Button>
                     
                     <Button title='pressable&Switch' onPress={ ()=>setScreen('pressable&Switch')}></Button>
@@ -40,8 +41,6 @@ export default function MenuScreen() {
                     <Button title='modal&BottomSheet' onPress={ ()=>setScreen('modal&BottomSheet')}></Button>
                     <Button title='activityIndicator' onPress={ ()=>setScreen('activityIndicator')}></Button>
                 
-                    
-
                 <StatusBar style="auto" />
                 </View>
             );
@@ -55,5 +54,6 @@ const styles = StyleSheet.create({
     backgroundColor:'#fff',
     alignItems:'center',
     justifyContent:'center',
+    gap:20,
   },
 });
