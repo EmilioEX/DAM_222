@@ -4,6 +4,9 @@ import { StyleSheet, Text, View, Button} from 'react-native';
 import { useState } from 'react';
 import Tarjetas from './Tarjetas';
 import SafeScreen from './SafeScreen';
+import FlatListSectionList from './FlatListSectionList';
+import ImageBackgroundSlapshScreen from './ImageBackgroundSlapshScreen';
+
 
 //2.- Zona Principal (main)
 export default function MenuScreen() {
