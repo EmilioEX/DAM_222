@@ -6,7 +6,7 @@ import Tarjetas from './Tarjetas';
 import SafeScreen from './SafeScreen';
 import FlatListSectionList from './FlatListSectionList';
 import ImageBackgroundSlapshScreen from './ImageBackgroundSlapshScreen';
-
+import ActivityIndicatorScreen from './ActivityIndicatorScreen';
 
 //2.- Zona Principal (main)
 export default function MenuScreen() {
@@ -28,7 +28,7 @@ export default function MenuScreen() {
         case 'modal&BottomSheet':
             return <ModalBottomSheet/>
         case 'activityIndicator':
-            return <ActivityIndicator/>
+            return <ActivityIndicatorScreen/>
         case 'menu':
             default:
             return (

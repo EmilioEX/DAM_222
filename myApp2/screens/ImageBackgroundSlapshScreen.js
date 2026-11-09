@@ -20,7 +20,8 @@ export default function ImageBackgroundSlapshScreen(){
     };
     return(
         <ImageBackground
-            source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyIl4F3MCJ6-ZjYgOxnyXwGC_yzMBQiKhY3kR3EbWqhQ&s"}}
+            source={{uri:
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyIl4F3MCJ6-ZjYgOxnyXwGC_yzMBQiKhY3kR3EbWqhQ&s"}}
             style={styles.container}
             resizeMode="cover"
         >
@@ -40,7 +41,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#000000',
     width: '100%',
-   
   },
   splashIcon: {
     fontSize: 80,
