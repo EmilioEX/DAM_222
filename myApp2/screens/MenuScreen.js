@@ -7,6 +7,7 @@ import SafeScreen from './SafeScreen';
 import FlatListSectionList from './FlatListSectionList';
 import ImageBackgroundSlapshScreen from './ImageBackgroundSlapshScreen';
 import ActivityIndicatorScreen from './ActivityIndicatorScreen';
+import ModalBottomSheet from './ModalBottomSheet';
 
 //2.- Zona Principal (main)
 export default function MenuScreen() {
@@ -54,6 +55,7 @@ export default function MenuScreen() {
 const styles = StyleSheet.create({
   container: {
     flex:1,
+    width:'100%',
     backgroundColor:'#fff',
     alignItems:'center',
     justifyContent:'center',

@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "expo": "~57.0.26",
+    "@gorhom/bottom-sheet": "^5.2.14",
+    "check": "^1.0.0",
+    "details": "^2.0.0",
+    "expo": "~57.0.33",
     "expo-status-bar": "~57.0.1",
+    "for": "^0.0.1-dev.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-native": "0.86.3",
+    "react-native-gesture-handler": "~2.32.0",
     "react-native-web": "^0.21.2"
   },
   "scripts": {

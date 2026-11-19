@@ -53,7 +53,8 @@ export default function FlatListSectionList(){
 const styles = StyleSheet.create({
   
   container: {
-    flex: 1,               
+    flex: 1,
+    width:'100%',               
     paddingTop: 50,        
     paddingHorizontal: 20, 
     backgroundColor: '#C4F3FF', 
