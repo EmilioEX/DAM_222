@@ -3,6 +3,17 @@ import {Stack} from 'expo-router';
 
 export default function RootLayout(){
     return (
-        <Stack screenOptions={{headerShown:false}}></Stack>
+        <Stack>
+            <Stack.Screen
+                name="(Tabs)"
+                options={{headerShown:false}}
+            />
+            <Stack.Screen
+                name="detalle" options={{title:"Detalle del Usuario"}}
+            />
+            <Stack.Screen
+                name="actualiza" options={{title:"Actualizar Usuario"}}
+            />
+        </Stack>
     );
 }
